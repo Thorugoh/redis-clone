@@ -2,9 +2,12 @@
   "name": "redis-server",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "server":  "node ./app/server/server.js",
+    "client":  "node ./app/client/client.js"
   },
   "author": "",
   "license": "ISC",
