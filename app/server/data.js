@@ -18,6 +18,10 @@ class DataManager {
   setData(newData){
     data = { ...data, ...newData};
   }
+
+  removeData(key){
+    delete data[key];
+  }
 }
 
 export default new DataManager();

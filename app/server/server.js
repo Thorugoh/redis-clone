@@ -1,10 +1,14 @@
 import net from "node:net"
 import { SetCommand } from './setCommand.js';
 import { GetCommand } from './getCommand.js';
+import { RemoveCommand } from "./removeCommand.js";
+import { AppendCommand } from "./appendCommand.js";
 
 const commands = {
   SET: new SetCommand(),
-  GET: new GetCommand()
+  GET: new GetCommand(),
+  REMOVE: new RemoveCommand(),
+  APPEND: new AppendCommand(),
 }
 
 const server = net.createServer(socket => {
